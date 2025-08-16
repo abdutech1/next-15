@@ -25,6 +25,7 @@ export const generateMetadata = async ({params}:Props) :Promise<Metadata> => {
 }
 export default async function Page({params}:Props) {
   const {id} = await params;
+
   return (
     <div>
       <h1>Product with Product id {id}</h1>

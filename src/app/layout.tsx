@@ -1,15 +1,21 @@
+
+import Header from "@/components/Header"
+import '../global.css'
+
 export const metadata = {
-  title:"our app",
+  title:{
+    default:"This is the default title",
+    template:"CODE BEYOND | %s"
+  },
   description:"our app is developed  using next.js"
 }
 
 export default function RootLayout({children}:{children:React.ReactNode}){
+  
   return(
     <html lang="en">
     <body>
-      <header>
-        <h1>HEADER</h1>
-      </header>
+    <Header/>
       {children}
       <footer>
         <h1>FOOTER</h1>

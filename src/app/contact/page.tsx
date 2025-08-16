@@ -1,6 +1,10 @@
 import About from "./_components/page"
 import Profile from "./profile"
-
+export const metadata = {
+  title:{
+    absolute:"Contact Title"
+  }
+}
 
 const Page = () => {
   return (
